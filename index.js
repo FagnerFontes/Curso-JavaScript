@@ -30,7 +30,7 @@ resto = 20 % 4
 console.log(resto); */
 
 //=====================Simplificadores Aritméticos==========================
-let resultado = 0; // Inicializa a variável resultado com o valor 0
+//let resultado = 0; // Inicializa a variável resultado com o valor 0
 
 // Soma 20 ao resultado
 //resultado = resultado + 20;
@@ -59,26 +59,3 @@ let resultado = 0; // Inicializa a variável resultado com o valor 0
 //console.log("O resultado da divisão é " + resultado);
 
 
-//**********************Strings*******************/
-
-//Método length
-const nome = "   Fagner Fontes Batista"//Cria uma constante de string
-console.log(nome.length);//Verifica quantos caracteres contém a string
-
-//Método toLowerCase()
-//Este método transforma todas as letras da sua string em minúsculas 
-const nomeMinusculo = nome.toLowerCase()
-console.log(nomeMinusculo);
-
-//Método toUpperCase() 
-//Este método transforma todas as letras da sua string em maiúsculas
-const nomeMaiusculo = nome.toUpperCase()
-console.log(nomeMaiusculo);
-
-//Método trim 
-//Este método retira os espaços que existem antes e depois da string 
-console.log(nome.trim());
-
-
-//nome.includes("Fagner")
-console.log(nome.includes("Fagner"));
