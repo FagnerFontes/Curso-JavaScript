@@ -1,4 +1,5 @@
-//Em JavaScript, "funções" são blocos de código reutilizáveis que realizam tarefas especificas ou calculam valores. Elas são uma parte fundamental da programação, permitindo que você encapsule um conjunto de instruções em um único bloc nomeado e, sem seguida, chame essa função várias vezes ao longo do seu código, evitando repetições e tornando o código mais organizado e legível. 
+//Em JavaScript, "funções" são blocos de código reutilizáveis que realizam tarefas especificas ou calculam valores. Elas são partes fundamentais da programação, permitindo que você encapsule um conjunto de instruções em um único bloco nomeado e, em seguida, chame essa função várias vezes ao longo do seu código, evitando repetições e tornando o código mais organizado e legível. 
+
 //As funções em javaScript podem receber parâmetros (valores de entrada) e retornas um valor de saída. Elas podem ser definidas usando a palavra-chave "function", seguinda pelo nome da função e os parâmetros entre parêntes. O corpo da função é delimitado por chaves "{}" e contém as instruções que serão executdas quando a função for chamada. Assim: 
 //function name(params) {
 //    }
@@ -16,10 +17,10 @@
 //Para chamar uma função, basta usar o nome da função seguido dos parêntes contendo os argumetos (valores) que serão passados para os parâmetros da função, se houver. A chamada de função pode ser utilizada como uma expressão, ou seja, pode ser usada como parte de uma operação ou atribuição. 
 
 //===================Exer1=====================================
-function somar(a,b) {
+function somar(a,b) {//Declaração da função
     return a * b 
 }
-const resultado = somar(5,3)
+const resultado = somar(5,3)//Chamada da função
 console.log(resultado);
 //Neste exemplo, temos uma função chamada "somar" que recebe dois parâmetros "a" e "b" e retorna a soma desses dois valores. Ao chamar a função "somar(5,3)", o valor 5 é atribuido ao parâmetro "a" e o valor 3 é atribuido ao parametro "b", resultando na soma 5 + 3, que é 8. O valor de retorno da função (8) é armazenado na variável "resultado" e, em seguida, é impresso no console. 
 
