@@ -1,0 +1,1 @@
+//um "array" é conjunto ordenado de valores. Cada valor é chamado de "elemento" e cada "elemento" tem uma posição númerica do "array", conhecida como "indice". Os "arrays"  
