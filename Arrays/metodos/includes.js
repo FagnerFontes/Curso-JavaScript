@@ -1,4 +1,4 @@
-//O método "includes()" é uma função  de array em JavaScript que permite verificar se  um determino elemento está presente no array. Ele retorna um valor booleano, ou seja, "true" se o elemento estiver no array, ou "false" se não estiver. 
+//O método "includes()" é uma função  de array em JavaScript que permite verificar se  um determinado elemento está presente no array. Ele retorna um valor booleano, ou seja, "true" se o elemento estiver no array, ou "false" se não estiver. 
 
 //A sintaxe do método é a seguinte "includes()" é a seguinte: ]
 //Array.includes(elemento, indiceInicial)
@@ -28,3 +28,5 @@ console.log(numeros1.includes(3,2));//A buesca começa a partir do indice 2
 console.log(numeros1.includes(3,3));//A busca começa a partir do indice 3  
 
 //O método "includes()" é uma forma simples e útil de verificar se um elemento especifico está presente em um array, sem a necessidade de percorrer manualmente o array coo um loop. 
+
+console.log();

@@ -29,3 +29,31 @@ console.log(`Array modificado com elementos substituídos: ${animais}`);//Imprim
 
 animais.splice(0,1)
 console.log(animais);
+
+//============= Fundamentação II ==========================
+//Este método altera um array, adicionando, removendo e inserindo elementos. 
+
+//A sintaxe é: 
+//array.splice(indice[, contagemDeExclusão, elemento1, ...elementoN])
+
+//-------------------- sintaxe -------------------------
+//*índice: aqui é ponto inicial de remoção de elementos do array. 
+
+//* contagemDeExclusão: é o número de elementos a serem excluídos do array a partir do índice. 
+
+//* elemento1, ..., são elementos a serem adicionados. 
+
+let cores = ['verde', 'amarelo', 'azul', 'roxo']
+console.log(`Array Original: ${cores}`);
+cores.splice(3)
+console.log(`Array Modificado: ${cores}`);
+
+//Observação: contagemDeExclusão não inclui o último do intervalo. 
+
+//Se o segundo parâmetro não for declarado, todos os elementos a começar do índice fornecido serão removidos do array. 
+
+//No próxkimo exemplo, removeremos 3 elementos do array e os substuiremos por mais itens. 
+
+let agenda = ['Eu', 'tenho', 'um', 'compromisso', 'amanhã']
+agenda.splice(5,0, 'alguns', 'clientes', 'amanhã')
+console.log(`${agenda}`);
