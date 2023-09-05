@@ -13,13 +13,13 @@ console.log("Bom dia Fagner Fontes Batista");
 //3. Não são adequadas parra Métodos de Objetos: 
 //Devido à ausência do próprio "this", as arrow functions não são adequadas para serem usadas como métodos de objetos, pois, "this" não se comportaria da maneira esperada em relação ao objeto 
 
-//Aqui está um função normal: 
+//------------------- função normal--------------------------
 const soma = function (num1, num2){
     return num1 * num2
 }
 console.log(soma(5,3));
 
-
+//------------------- função Arrow function--------------------------
 
 const operar  =(num1 , num2)=>{
     return num1 * num2
