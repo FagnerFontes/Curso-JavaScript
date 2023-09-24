@@ -1,0 +1,10 @@
+.Testes{
+    font-size: 20px;
+    width: 180px;
+    height: 40px;
+    color: white;
+    background-color: brown;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center ;
+}
