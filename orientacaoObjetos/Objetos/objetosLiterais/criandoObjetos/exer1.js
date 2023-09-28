@@ -25,12 +25,44 @@ console.log(pessoa.nome);
 
 console.log("========= Acesso a propriedades ==============");
 //3. Acesso a propriedades: Podemos acessar as propriedades de um objeto literal usando a notação de ponto ("objeto.propriedade") ou a notação de colchetes ("objeto["propriedade"]")
-console.log(pessoa.nome);
+// console.log(pessoa.nome);
 
 console.log("======= Adição e Remoção de Propriedades =======");
+//4. Podemos adicionar ou remover propriedades de um objeto literal dinamicamente, mesmo após a criação do objeto. 
+// pessoa.cidade = "Vitoria"
+// console.log(pessoa.cidade);
+// delete pessoa.cidade
+// console.log(pessoa);
 
-pessoa.cidade = "Vitoria"
-//console.log(pessoa.cidade);
-//delete pessoa.cidade
-console.log(pessoa);
+console.log("======= Valores de  Propriedade Dinâmica =======");
+//5. As chaves de propriedade podem ser calculadas dinamicamente usando a notação do colchetes. Isso é útil quando não conhecemos a chave antecipadamente ou ela é armazenada em uma variável. 
 
+const teste = "Esmeralda"; 
+console.log(pessoa[teste]);
+
+console.log("======= Objetos Aninhados  =======");
+//6. Podemos criar objetos aninhados dentro de objetos literais. Isso permite representar estruturas de dados complexas. 
+
+const aluno = {
+    nome: "Fagner", 
+    notas: {
+        matematica: 9.0,
+        Portugues: 8.3, 
+        Historia: 9.5, 
+        Geografia: 9.0, 
+        Ciencias: 7.8
+    }
+}
+
+console.log(aluno.notas);
+
+console.log("================ Métodos  ==================");
+const retangulo = {
+    largura: 10.8, 
+    altura: 5.9, 
+    calcularArea: function(){
+       return this.largura * this.altura
+    }
+};
+
+console.log(retangulo.calcularArea());
