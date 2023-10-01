@@ -19,18 +19,24 @@
 
 //4. Métodos de Instância: Além do construtor, podemos definir outros métodos dentro da classe que se tornam métodos de instância, ou seja, métodos que podem ser chamados em objetos criados a partir da classe. 
 
+//Declação da classe "Pessoa" 
 class Pessoa{
-    constructor(nome, idade){
-        this.nome = nome; 
-        this.idade = idade;
+    constructor(nome, idade){//construtor da classe pessoa
+        this.nome = nome; //Propriedade que armazena o nome da pessoa.  
+        this.idade = idade;//propriedade que armazena a idade da pessoa
     }
     saudacao(){
         console.log(`olá, meu nome é ${this.nome} e tenho ${this.idade} anos`);
+        //Método "saudacao" exibe uma mensagem de saudação no console, usando as propriedade "nome" e "idade."
     }
 }
 
+//Criação de uma instãncia da classe "Pessoa" com nome "Fagner" e idade "43"
 const pessoa1 = new Pessoa("Fagner", 43)
+//Chama o métoodo "saudacao" de instância "pessoa1" para exibir uma saudação personalizada 
 pessoa1.saudacao()
+
+//5. Instanciação de objetos: Para criar objetos a partir de uma classe, usamos a palavra-chave "new", seguida do nome da classe. Isso chama o construtor da classe para criar uma instância do objeto
 
 const pessoa2 = new Pessoa("Esmeralda", 68)
 pessoa2.saudacao()

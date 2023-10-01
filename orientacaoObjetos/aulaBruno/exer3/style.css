@@ -1,0 +1,55 @@
+/* Define estilos para todos os elementos HTML (universal selector)*/
+*{
+    padding: 1px; /*define um preenchimento de 1px para todos os elementos*/
+    margin: 1px;/*Define uma margem de 1px para todos os elementos */
+    box-sizing: border-box;/*Define a modelagem da caixa para incluir preenchimento e borda no tamanho total*/
+    font-size: large;/*Define o tamanho da fonte como "large" para todos os elementos*/
+}
+
+/*Estilos para elementos com a classe "campoForm"*/
+.campoForm{
+    display: flex;/*Define a exibição como flexivel (Os itens podem ser organizados em linha ou coluna) */
+    flex-direction: column;/*Define a direção dos itens como coluna ()um abaixo do outro*/
+    width: 300px;/*Define a largura com 300 pixels*/
+    margin-bottom: 10px;/*Define uma margem inferior de 10 px*/
+}
+
+/*Estilos para elementos de entrada dentro de elementos com a classe "campoForm"*/
+.campoForm input{
+    background-color: #eee;/*Define a cor de fundo como cinza claro*/
+    padding: 5px;/*Define um preenchimento de 5 pixels*/
+    border-radius: 5px;/*Define um raio de borda de 5 pixels (bordas arredondadas)*/
+    border: 1px solid #000;/*Define uma borda de 1 pixel na cor preta*/
+}
+
+/*Estilos para botões dentro de elementos com a classe "campoForm"*/
+.campoForm button{
+    background-color: #888;/*Define a cor de fundo com cinza escuro*/
+    cursor: pointer;/*Define um cursor que indica que o elemento é clicável */
+    padding: 5px;/*Define um preenchimento de 5 pixels*/
+    border-radius: 5px;/*Define um raio de borda de 5 pixels (bordas arredondadas)*/
+}
+
+/*Estilos para elementos com a classe "res"*/
+.res{
+    font-family: aparajita;
+    display: flex;/*Define a exibição como flexível (itens podem ser organizados em linha ou em colunas */
+    width: 800px;/*Define a largura como 900 pixels*/
+    color: brown;/*Difine a cor do texto como marrom*/
+    background-color: darkcyan; /*Define a cor da borda como ciano escuro*/
+    border: chocolate;/*Define a cor da borda como chocolate*/
+    padding: 5px;/*Define um preenchimento de 5 pixels*/
+    border-radius: 5px;/*Define um raio de borda de 5 pixels (bordas arredondadas)*/
+}
+
+/*Estilos para elementos com a classe "pessoa*/
+.pessoa{
+    background-color: white;/*Define a cor de fundo usando a cor branca*/
+    border: 5px solid;/*Define uma borda solida de 5 pixels */
+    padding: 10px;/*Define o preenchimento de 5 pixels*/
+    border-radius: 5px;/*Define um raio de borda de 5 pixels (bordas arredondadas)*/
+    display: flex;/*Define uma exibição como flexivel (itens podem ser organizados em linha ou em coluna)*/
+    width: 400px;/*Define a largura com 400 pixels*/
+
+}
+
