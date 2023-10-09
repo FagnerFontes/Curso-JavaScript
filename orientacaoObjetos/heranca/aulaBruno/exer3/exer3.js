@@ -1,4 +1,5 @@
 
+console.log("Oi")
 //Seleciona elementos do HTML pelo ID e atribui a variáveis
 const f_tipoMilitar = document.querySelector("#f_tipoMilitar")
 const f_tipoNormal = document.querySelector("#f_tipoNormal")
@@ -11,6 +12,9 @@ const btn_addCarro = document.querySelector("#btn_addCarro")
 
 //A "a_carros" é inicializada como um array vazio para armazenar objetos de carros posteriormente: 
 let a_carros = []
+a_carros.filter((el)=>{
+
+})
 
 //São definidos ouvkintes de eventos para os elementos HTML "f_tipoMilitar" e "f_tipoNormal". Quando o usuário clkica nesses elementos, ou ouvintes de eventos executam ações com base na seleção:
 f_tipoMilitar.addEventListener("click", (evt) => {
@@ -39,12 +43,22 @@ const gerenciarExibicaoCarros = () => {
     carros.innerHTML = ""
     a_carros.forEach((c) => {
         const div = document.createElement("div")
+        const btn=document.createElement("button")
+        btn.innerHTML+="remover"
+        btn.addEventListener("click", (evt)=>{
+            console.log(evt.target.parentNode.dataSet.nome);
+            //console.log(evt.target);
+        })
         div.setAttribute("class", "carro")
-        div.innerHTML = `Nome: ${c.nome}<br/>`
-        div.innerHTML += `Portas: ${c.portas}<br/>`
-        div.innerHTML += `Blindagem: ${c.blindagem}<br/>`
-        div.innerHTML += `Munição: ${c.municão}<br/>`
+        div.setAttribute("data-nome", c.nome)
+        div.innerHTML= `Nome: ${c.nome}<br/>`
+        div.innerHTML+= `Portas: ${c.portas}<br/>`
+        div.innerHTML+= `Blindagem: ${c.blindagem}<br/>`
+        div.innerHTML+= `Munição: ${c.municão}<br/>`
+       ;
+        div.appendChild(btn)
         carros.appendChild(div)
+       // carros.appendChild(btn)
 
     })
 }
