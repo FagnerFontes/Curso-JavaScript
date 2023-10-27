@@ -1,0 +1,89 @@
+* {
+    padding: 3px;
+    margin: 2px;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+.dflex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    border: 3px solid #bbb;
+    width: 230px;
+    font-family:fantasy;
+    box-shadow: #eee;
+    border-radius: 5px;
+}
+
+.div_nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    background-color: inherit;
+   font-size: smaller;
+   
+}
+
+.div_display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+}
+
+.div_teclas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 225px;
+    flex-wrap: wrap;
+   
+}
+
+
+.tecla {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:brown;
+    color: aliceblue;
+    border: 3px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-color: unset;
+}
+
+.teclaop{
+    background-color: rgb(0, 204, 255) !important;
+    border-color: unset !important;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 5px;
+
+}
+
+.display{
+   background-color: white;
+   color: black;
+   width: 225px;
+   text-align: right;
+   padding: 5px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+
+
+

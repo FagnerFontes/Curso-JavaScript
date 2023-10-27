@@ -2,6 +2,8 @@
 
 //Aqui estão algumas fundamentações sobre o método "get" em JavaScript: 
 
+//No código abaixo, o método "get" é usado para criar "getters" em objetos JavaScript. Gettters são métodos especiais que permitem o acesso a propriedade de objetos de forma controlada. Eles são usados para obter o valor de uma propriedade, mas antes de retornar o valor, podemos adicionar lógica personalizada
+
 //1. Definição de um Getter: Para criar um getter para uma propriedade, precisamos definir uma função dentro do objeto e a associa a uma propriedade usando a palavra-chave "get". Quando essa propriedade é acessada, a função getter é automaticamente chamada. 
 
 const objeto = {
