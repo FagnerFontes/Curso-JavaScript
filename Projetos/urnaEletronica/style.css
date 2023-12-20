@@ -1,3 +1,4 @@
+/* Definindo a animaçãpo de pisca */
 @keyframes pisca {
     0% {
         opacity: 0.2;
@@ -12,7 +13,7 @@
     }
 }
 
-
+/* Configurações gerais do corpo da página */
 body {
     margin: 0;
     display: flex;
@@ -21,16 +22,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
 }
-
+/* Estilo da urna eletrônica */
 .urna {
     background-color: #dbd5c9;
     padding: 30px;
     display: flex;
     margin-top: 25px;
+    flex-wrap: wrap;
 }
 
+/* Estilo da tela da urna*/
 .tela {
-    width: 500px;
+    /* width: 100%; */
+    max-width: 500px;
     height: 320px;
     background: linear-gradient(to right, #E8E8E8, #C1C1C1);
     border: 2px solid;
@@ -39,12 +43,14 @@ body {
     margin: 30px;
 }
 
+/* Estilo do teclado */
 .teclado {
     margin-left: 30px;
     width: 300px;
     background-color: #403A3A;
 }
 
+/* Estilo dos botões do teclado */
 .teclado--botao {
     display: flex;
     justify-content: center;
@@ -59,6 +65,7 @@ body {
     cursor: pointer;
     box-shadow: 3px 3px 0px #4db67c;
 }
+
 
 .teclado--linha {
     display: flex;
@@ -194,5 +201,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
+

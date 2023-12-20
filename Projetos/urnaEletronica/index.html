@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urna Eletronica</title>
-    <link rel="stylesheet" href="/Curso-JavaScript/Projetos/urnaEletronica/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!--Contêiner principal da urna eletrônica -->
     <div class="urna">
+        <!-- Seção da tela urna -->
         <div class="tela">
+            <!-- Subseção à esquerda da tela -->
             <div class="d-1">
                 <div class="d-1-left">
+                    <!-- Detalhes sobre o voto para vereador -->
                     <div class="d-1-1">
                         <span>SEU VOTO PARA</span>
                     </div>
@@ -20,6 +24,7 @@
                         <span>VEREADOR</span>
                     </div>
                     <div class="d-1-3">
+                        <!-- Dígitos do voto -->
                         <div class="numero pisca"></div>
                         <div class="numero"></div>
                     </div>
@@ -29,8 +34,10 @@
                         Vice-Prefeito: Beltrano de tal
                     </div>
                 </div>
+                <!-- Subseção à direita da tela -->
                 <div class="d-1-right">
                     <strong>Prefeito(a)</strong>
+                    <!-- Imagem do prefeito e vice-prefeito -->
                     <div class="d-1-image">
                         <img src="./img/joana.png" alt="">
                         Prefeito
@@ -41,15 +48,19 @@
                     </div>
                 </div>
             </div>
+            <!-- Informações adicionais e instruções soobre o voto -->
             <div class="d-2">
                 Apete a tecla: <br>
                 CONFIRMA para <strong>CONFIRMAR</strong> este voto <br>
                 CORRIGE para <strong>REINICIAR</strong> este voto
             </div>
         </div>
+        <!-- Teclado da urna eletrônica -->
         <div class="teclado">
+            <!-- Teclado de botões do teclado -->
             <div class="linha">
                 <div class="teclado--linha">
+                    <!-- Botões numéricos -->
                     <div class="teclado--botao" onclick="clicou('1')">1</div>
                     <div class="teclado--botao" onclick="clicou('2')">2</div>
                     <div class="teclado--botao" onclick="clicou('3')">3</div>
@@ -59,6 +70,7 @@
                     <div class="teclado--botao" onclick="clicou('5')">5</div>
                     <div class="teclado--botao" onclick="clicou('3')">6</div>
                 </div>
+                <!-- Repetir para todas as outras linhas e botões -->
                 <div class="teclado--linha">
                     <div class="teclado--botao" onclick="clicou('7')">7</div>
                     <div class="teclado--botao" onclick="clicou('8')">8</div>
@@ -73,6 +85,7 @@
                     <div class="teclado--botao botao--confirma"onclick="CONFIRMA()">COMFIRMA</div>
                 </div>
             </div>
+            <!-- Scripts JavaScript -->
 <script src="etapa.js"></script>
 <script src="script.js"></script>
 </body>

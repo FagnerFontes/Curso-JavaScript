@@ -1,0 +1,80 @@
+*{
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{   
+    border-radius: 10px;
+    background-color: #55c1dd;
+    color: beige;
+    padding: 10px;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+form{
+    display: flex;
+    justify-content:space-between;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 20px;
+}
+
+#pesquisa{
+    padding: 5px;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.botao{
+    padding: 6px;
+    color: white;
+    background-color: mediumvioletred;
+    border-radius: 7px;
+    border: none; 
+    cursor: pointer;  
+}
+
+.botao:hover{
+    background-color: aliceblue;
+}
+
+
+
+.lista{
+    display: flex;
+    margin-top: 10px;
+    padding: 15px;
+    
+}
+
+a{
+    cursor: pointer;
+}
+
+.item{
+    text-align: center;
+    padding: 10px ;
+    width: 200px;
+    border: 2px solid #333;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+item:hover{
+    background-color: brown;  
+}
+
+.item img{
+    width: 100%;
+}
+
+@media only screen and(max-width) {
+
+}
+
