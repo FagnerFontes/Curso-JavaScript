@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Definindo a codificação de caracteres e a configuração inicial da wieport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na barra do navegador -->
     <title>Bahiano Filmes</title>
+
+    <!-- Vinculando o arquivo de estilo externo à página -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    
+    <!-- Título principal da página com a classe "title" -->
     <h1 class="title">Bahiano Filmes</h1>
+
+    <!-- Formulário de pesquisa -->
     <form>
+        <!-- Campo de entrada de texto para digitar o nome do filme -->
         <input
         type="text" 
         id="pesquisa" 
         placeholder="Digite o nome do Filme"/>
+
+        <!-- Botão de pesquisa com a classe "botao" -->
         <button class="botao">Pesquisar</button>
     </form>
+
+    <!-- Contêiner para a lista de filmes com a classe "lista" -->
     <div class="lista">
+        <!-- Item da lista de filmes com a classe "item" -->
         <div class="item">
-        
-            <img src="https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_SX300.jpg" alt="">
-            <h2>John Wick</h2>
-        </div>
-         <div class="item">
-            
-            <img src="https://m.media-amazon.com/images/M/MV5BY2Q0ODg4ZmItNDZiYi00ZWY5LTg2NzctNmYwZjA5OThmNzE1XkEyXkFqcGdeQXVyMjM4MzQ4OTQ@._V1_SX300.jpg" alt="">
-            <h2>Indiana Jones e <br>última Cruzada</h2>
-        </div>
-        <div class="item">
-           
-            <img src="https://m.media-amazon.com/images/M/MV5BMjk3ODhmNjgtZjllOC00ZWZjLTkwYzQtNzc1Y2ZhMjY2ODE0XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg" alt="">
-            <h2>Superman x Batman <br> Apolipese</h2>
-        </div>
-        <div class="item">
-                <img src="https://m.media-amazon.com/images/M/MV5BMDJhZjA5MWEtOTE5Yy00MWJiLTgwNjQtMDliOWI0NWJmZDZkXkEyXkFqcGdeQXVyMjY1ODY2Ng@@._V1_SX300.jpg" alt="">
-                <h2>Iroman</h2>
-            </div>
+            <!-- O conteúdo dos itens da lista será adicionado dinamicamente via JavaScript -->
         </div>
     </div>
+    <!-- Inclusão do arquivo de script externo à página -->
     <script src="./script.js"></script>
 </body>
 </html>
