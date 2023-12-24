@@ -1,32 +1,26 @@
+*{
+    margin: 0;
+    font-family: 'Aparajita';
+    
+}
+
 .body{
-    /* display: flex; */
-    background-color: rgb(83, 67, 67);
+    
+    display: flex; 
+    margin-left: 10px;
+    margin-top: 15px;
     flex-wrap: wrap;
+    background-color: rgb(83, 67, 67);
+  
 }
 
-@media  only screen and(max-width: 700px){
-    .ul{
-        float: none;
-        flex-direction: column;
-        height: auto;
-    }
-
-    footer{
-       font-size: 14px;
-       padding: 5px;
-    }
-
-
-}
 
 .header{
     display: flex;
-    flex-direction: column;
-    align-items:flex-end;
-    flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
-    height: 75px;
-    border-radius: 5px;
+    justify-content:space-between;
+    align-items: center;
+    width: 98%;
+    background-color: cadetblue;
 }
 
 
@@ -34,30 +28,54 @@ h1{
     color: #b94109;
 }
 
-
-.container{
-    display: flex;
-    flex-direction: column;
-}
 .logo__site{
     padding: 2px;
     width: 78px;
 }
 
-.lista{
+.container{
     display: flex;
-    gap: 25px;
+    flex-direction: column;
+}
+
+
+#lista{
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+li:hover{
+    border: 1px solid;
+    border: none;
+}
+
+.item{
+    width: 200px;
+    height: 400px;
+    font-size: 5px;
+    cursor: pointer;
+   
+    
+}
+
+.item img {
+    width: 100%;
 }
 
 .item:hover{
-    border: 1cap solid tomato;
+    border: 1cap solid rgb(94, 93, 92);
     padding: 1px;
+    /* transition: all 0.3s; */
 }
 a{
     text-decoration: none;
-    border: 2px solid #FFEBCD;
+    /* border: 2px solid #FFEBCD; */
     padding: 2px;
     color: #333;
+    
 }
 
 li{
@@ -72,15 +90,15 @@ ul{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    position: relative;
-    z-index: 300;
     flex-wrap:wrap ;
     width: 100%;
     border-radius: 5px;
-    background-color: bisque;
+    background-color: rgb(226, 226, 225);
     padding: 2px 2px;
     gap: 15px;
 }
+
+
 
 h2{
     display: flex;
@@ -132,3 +150,28 @@ button{
     padding: 10px;
 }
 
+@media only screen and (max-width: 400px){
+    .body{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .header{
+        align-items: center;
+    }
+
+    #lista{
+        
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+}
