@@ -1,3 +1,29 @@
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../images/paisagem.jpeg');
+    background-size: cover;
+    min-height: 100vh;
+    background-color: bisque;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    max-width: 800px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
 .grid{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -5,7 +31,8 @@
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    margin: 100px auto;
+   
+  
 }
 
 .card{
@@ -30,12 +57,13 @@
  
 }
 
+
 .front{
     transform: rotateY('180deg');
 }
 
 .back{
-    background-image: url('../images/teste/indio\ nativo.jpeg');
+    background-image: url('../images/verso.jpeg');
     backface-visibility: hidden;
 }
 
@@ -43,8 +71,8 @@
     transform: rotateY(180deg);
 }
 
-.desabled-card{
-    filter: saturate(0)
+.disabled-card{
+    filter: saturate(0),
     opacity(0.5)
 }
 
