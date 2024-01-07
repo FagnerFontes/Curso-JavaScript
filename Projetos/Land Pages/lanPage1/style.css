@@ -1,0 +1,65 @@
+
+.container-body{
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to bottom, #0a0809 0%,#0a0e0a 4%,#6e7774 41%,#aebcbf 100%); */
+    background: linear-gradient(to bottom, rgba(19,19,19,1) 0%,rgba(28,28,28,1) 12%,rgba(71,71,71,1) 17%,rgba(71,71,71,1) 49%,rgba(102,102,102,1) 75%,rgba(89,89,89,1) 88%,rgba(76,76,76,1) 100%);
+header{
+    border: solid 1px coral;
+}
+
+.headerTop{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 50px;
+    flex-wrap: wrap;
+    /* border: solid 1px; */
+    width: 85%;
+    height: 39px; 
+    margin-right: 148px;
+    margin-bottom: 50px;
+}
+
+.navLinks{
+    display: flex;
+    font-family: 'arial';
+    justify-content:end;
+    gap: 30px;
+    width: 100%;
+    padding-left: 2px;
+    color: #FBFBFB;
+    font-size: 20.49px;
+    font-family: 'Inter';
+    font-weight: 400;
+    text-transform: break-word;
+    word-wrap: break-word;
+    /* <div style="color: #FBFBFB; font-size: 7.49px; font-family: Inter; font-weight: 400; text-transform: capitalize; word-wrap: break-word">Services</div>
+// Services
+color: #FBFBFB;
+font-size: 7.49px;
+font-family: Inter;
+font-weight: 400;
+text-transform: capitalize;
+word-wrap: break-word
+Services
+ */
+}
+
+.nome__foto{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    /* font-family: Inter; */
+    font-weight: 400;
+text-transform: capitalize;
+word-wrap: break-word
+}
+
+p{
+    color: blueviolet;
+}

@@ -1,4 +1,5 @@
-main{
+/* Estilos para o contêiner principal */
+main {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -9,71 +10,72 @@ main{
     align-items: center;
     justify-content: center;
     padding: 20px 20px 50px;
-
 }
 
-.header{
+/* Estilos para o cabeçalho */
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap; /* Evita que os itens quebrem para a próxima linha */
     width: 100%;
     background-color: rgba(255, 255, 255);
     max-width: 800px;
     margin: 15px;
     padding: 10px;
     border-radius: 10px;
-    
 }
-.grid{
+
+/* Estilos para a grade de cartas */
+.grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-   
-  
 }
 
-.card{
-     aspect-ratio: 3/4;
-     width: 100%;
-     background-color: #333;
-     border-radius: 5px;
-     position: relative;
-     transition: all  2000ms ease;
-     transform-style: preserve-3d;
-  
+/* Estilos para as cartas */
+.card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    position: relative;
+    transition: all 2000ms ease;
+    transform-style: preserve-3d;
 }
 
-.face{
+/* Estilos para as faces das cartas */
+.face {
     width: 100%;
     height: 100%;
     position: absolute;
     background-size: cover;
-    background-position: center; 
+    background-position: center;
     border-radius: 16px;
     transition: all 2000ms ease;
- 
 }
 
-
-.front{
+/* Estilos para a frente das cartas */
+.front {
     transform: rotateY('180deg');
 }
 
-.back{
+/* Estilos para o verso das cartas */
+.back {
     background-image: url('../images/verso.jpeg');
     backface-visibility: hidden;
 }
 
-.reveal-card{
+/* Estilos para cartas reveladas */
+.reveal-card {
     transform: rotateY(180deg);
 }
 
-.disabled-card{
-    filter: saturate(0),
-    opacity(0.5)
+/* Estilos para cartas desativadas */
+.disabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
 }
-
-

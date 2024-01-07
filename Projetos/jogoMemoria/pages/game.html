@@ -2,22 +2,31 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+
+    <!-- Metadados do documento -->
+    <meta charset="UTF-8"><!--Codificação de caracteres -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da Memória</title>
+    <title>Jogo da Memória</title><!--Título da página-->
+
+    <!--Links para folhas de estilo-->
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 
-<body>
-    <main>
-        <header class="header">
-            <span class="player"></span>
-            <span>Tempo ==>  <span class="timer"></span></span>
+<body><!--Corpo da página-->
+
+    <!-- Container da página -->
+    <main class="container">
+        <header class="header container-sm" >
+            <span class="player"></span><!--Espaço para exibir o nome do jogador-->
+            <span>Tempo ==>  <span class="timer"></span><span> <!--Espaço para exibir o tempo do jogo -->
         </header>
-        <div class="grid"></div>
+        <div class="grid"></div><!--Grade onde as cartas do serão exibidas-->
     </main>
-    <script src="../js/game.js"></script>
+
+    <!-- Script JavaScript no final do corpo da página -->
+    <script src="../js/game.js"></script><!--Link para script 'game.js'-->
 </body>
 
 </html>
