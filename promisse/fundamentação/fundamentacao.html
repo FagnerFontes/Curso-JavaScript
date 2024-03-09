@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Promise</title>
+</head>
+
+
+    <style>
+        li{
+            font-family: 'aparajita';
+            font-size: 18px;
+        }
+
+        strong{
+            color: rgba(199, 80, 25, 0.904);
+        }
+    </style>
+<body>
+
+    <h1 class="container-fluid p-2 bg-body-secondary fixed-top text-center text-body">Promise
+    </h1>
+    <div class="p-4 invisible"></div>
+    <br>
+
+    <div class="container">
+        <p>
+            Uma Promise no JavaScript é um objeto que representa a eventual conclusão (<i>ou falha</i>) de uma operação assíncrona. É comumente usada para trabalhar com código assíncrono de forma limpa e eficiente, evitando o chamado <strong>callback hell</strong> <i>aninhamento excessivo de callbacks</i> e facilitando o tratamento de erros.
+        </p>
+
+        <p>A Promisse pode estar em três estados diferentes:</p> 
+
+        <ol type="I">
+            <li ><strong>Pending</strong> : (<i>Pendente</i>): Estado inicial, quando a Promisse está em execução, mas ainda não foi concluída nem rejeitada.</li>
+
+            <li><strong>Fulfiled</strong> :  (<i>Concluída</i>) : Quando a operação assíncrona é bem-sucedida, ou seja, a Promise é resolvida com um valor. </li>
+
+            <li><strong>Rejected</strong> : (<i>Rejeitada</i>) : Quando uma operação assíncrona falha, a Promise é rejeitada e é gerado um erro.</li>
+        </ol>
+
+        <div class="container">
+            <img src="./img/CriarPromise.png" style="width: 600px; margin-left:200px ;" alt="">
+        </div>
+    
+        <p class="mt-2">
+            Depois de criar uma promisse, podemos encadear chamadas de método <strong>then ( )</strong> e <strong>catch( )</strong> para lidar com a resolução ou rejeição da Promise.
+        </p >
+
+        <div class="mb-3">
+            <img src="./img/respostaPromise.png" style="margin-left: 200px;" alt="">
+        </div>
+
+        <p>
+            A função passada  para <strong>then( )</strong> para executar operações adicionais após a conclusão da Promise. 
+            <br>
+            Além disso, podemos encadear múltiplas chamadas de <strong>then( )</strong> para executar operações adicionais após a conclusão da Promise:  
+        </p>
+
+      
+    </div>
+
+
+    
+
+    <script src="./fundamentacao.js"></script>
+</body>
+
+</html>
