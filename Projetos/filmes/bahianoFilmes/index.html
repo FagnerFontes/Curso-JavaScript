@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definindo a codificação de caracteres e a configuração inicial da wieport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página exibido na barra do navegador -->
+    <title>Bahiano Filmes</title>
+
+    <!-- Vinculando o arquivo de estilo externo à página -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- Título principal da página com a classe "title" -->
+    <h1 class="title">Bahiano Filmes</h1>
+
+    <!-- Formulário de pesquisa -->
+    <form>
+        <!-- Campo de entrada de texto para digitar o nome do filme -->
+        <input
+        type="text" 
+        id="pesquisa" 
+        placeholder="Digite o nome do Filme"/>
+
+        <!-- Botão de pesquisa com a classe "botao" -->
+        <button class="botao">Pesquisar</button>
+    </form>
+
+    <!-- Contêiner para a lista de filmes com a classe "lista" -->
+    <div class="lista">
+        <!-- Item da lista de filmes com a classe "item" -->
+        <div class="item">
+            <!-- O conteúdo dos itens da lista será adicionado dinamicamente via JavaScript -->
+        </div>
+    </div>
+    <!-- Inclusão do arquivo de script externo à página -->
+    <script src="./script.js"></script>
+</body>
+</html>

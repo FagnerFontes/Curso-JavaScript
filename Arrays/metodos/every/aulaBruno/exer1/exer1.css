@@ -1,0 +1,58 @@
+*{
+    /*Configurações globais para todos os elementos*/
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;/*Garante que as bordas estejam incuídas nas dimensões os elementos */
+    font-size: large; /*Define o tamanho da fonte globalmente para large*/
+}
+
+/*Estido para classe "caixa"*/
+.caixa{
+    border: 5px solid black;/*Borda preta de 5px*/
+    border-radius: 10px;/*Bora Arredondada com raio de 10px*/
+    display: flex;/*Usando flex box para organização*/
+    flex-direction: column;/*Itens empilhados verticalmente (coluna)*/
+    margin: 5px;/*Magem de 5px em todos os lados*/
+    padding: 5px;/*Preenchimento  interno de 5px*/
+}
+
+/*Estilo para a classe "verde"*/
+.verde{
+    border-color: rgb(20, 120, 23) !important; /*Cor da borda azul*/ 
+    background-color: rgb(220, 255, 225) !important /*Cor de fundo azul*/
+}
+
+/* Estilo para a classe "vermelha" */
+.azul{
+    border-color: rgb(20, 60, 120) !important; /* Cor da borda vermelha */
+    background-color: rgb(220, 230, 225) !important; /* Cor de fundo vermelha */
+}
+
+.vermelha{
+    border-color: rgb(120, 20, 20) !important;
+    background-color: rgb(214, 152, 176) !important ;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    background-color: #025;
+    columns: #fff;
+    cursor: pointer;
+    border-radius: 10px ;
+    margin-top: 5px;
+    }
+
+#caixa_pesquisar input{
+        padding: 10px;
+        border-radius: 5px;
+        width: 300px;
+}
+
+.btnVerificar{
+    border-color: transparent;
+    width: 50px;
+    background-color: rgba(159, 30, 163, 0.568);
+    color: chocolate;
+}
+

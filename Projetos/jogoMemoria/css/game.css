@@ -1,0 +1,81 @@
+/* Estilos para o contêiner principal */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../images/paisagem.jpeg');
+    background-size: cover;
+    min-height: 100vh;
+    background-color: bisque;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* Evita que os itens quebrem para a próxima linha */
+    width: 100%;
+    background-color: rgba(255, 255, 255);
+    max-width: 800px;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilos para a grade de cartas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos para as cartas */
+.card {
+    aspect-ratio: 3/4;
+    width: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    position: relative;
+    transition: all 2000ms ease;
+    transform-style: preserve-3d;
+}
+
+/* Estilos para as faces das cartas */
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    transition: all 2000ms ease;
+}
+
+/* Estilos para a frente das cartas */
+.front {
+    transform: rotateY('180deg');
+}
+
+/* Estilos para o verso das cartas */
+.back {
+    background-image: url('../images/verso.jpeg');
+    backface-visibility: hidden;
+}
+
+/* Estilos para cartas reveladas */
+.reveal-card {
+    transform: rotateY(180deg);
+}
+
+/* Estilos para cartas desativadas */
+.disabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
+}

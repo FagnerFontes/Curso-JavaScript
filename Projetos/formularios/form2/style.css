@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.screen{
+    display: flex;
+    height: 100vh;
+}
+
+.leftSide{
+    width: 500px;
+    background-color: #a466cd;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 50px;
+}
+
+.rightSide img{
+    width: 430px;
+    height: 590px;
+    border-radius: 10px;
+  
+}
+.rightSide{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center  
+}
+
+.leftSide label{
+    display: block;/*Deixa os elementos do formulário um embaixo do outro*/
+    margin-bottom: 5px;
+}
+
+.leftSide input{
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
+}
+
+.login a {
+    text-decoration: none;
+}
+
+.error{
+    font-size: 11px;
+    background-color: mediumorchid;
+    color: #fff;
+    padding: 4px;
+    border-radius: 2px;
+}

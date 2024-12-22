@@ -1,0 +1,55 @@
+<!-- 
+        A página HTML apresentada tem como objetivo criar uma interface para um aplicativo ou site chamado "Pokestop". O conteúdo é organizado em três seções principais, cabeçalho, contéudo principal e Rodapé. O cabeçalho exibe o logotipo do Pokémon, equanto o conteúdo principal contém uma seção relacionada ao "Pokestop" com uma imagem de uma Pokébola, possibilitando a interação do usuário ao clicar nela (por meio da função JavaScript `getPOkemon`). Além disso, há espaço para exibição dinâmica de Pokémons, indicando que parte do conteúdo será manipulado ou carregado dinamicamente através de scripts. O Rodapé fornece informações sobre o desenvolvedor, indicando que o projeto foi desenvolvido por "Cangaceirinho In Deseign Web". O código também inclui referêncuas a arquivos externas de script, indicando uma estrutura modular e organizada para o desenvolvimento web.
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Definindo a codificação do documento com UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configurando a viewport para dispositivos moveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da página -->
+    <title>Pokestop</title>
+    <!-- Link para o arquivo de estilo externo -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>teste</h1>
+    <!-- Cabeçalho da página -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo pokemon -->
+            <img src="./assets/pokemon_logo.png" class="pokemon__logo" alt="logo pokemon" />
+        </div>
+    </header>
+    <!-- Conteúdo principal, relacionada ao Pokestop -->
+    <main class="main">
+        <div class="container">
+            <!-- Seção principal da página -->
+            <section class="pokestop">
+                <!--Div que contém a imagem da pokebola e o evento de clique   -->
+                <div class=" pokebola">
+                    <img src="./assets/pokebola.png" class="pokebola__image"
+                    alt="pokebola, bola é vermelha e branca" 
+                    onclick="getPokemon()"
+                    />
+                </div>
+                <!-- Div destinada à exibição do Pokémon prenchida dinamicamente via JavaScript-->
+                <div class="pokemon"></div>
+            </section>
+        </div>
+    </main>
+    <!-- Rodapé da página -->
+    <footer class="footer">
+        <!-- Texto indicando o desenvolvedor e a área de atuação -->
+        <p class="text">Desenvolvido por Cangaceirinho In Design Web</p>
+    </footer>
+    <!-- Inclusão do arquivo de script JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,21 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+.caixa{
+    font-size: larger;
+    font-family: aparajita;
+    color: aliceblue;
+    background-color: blueviolet;
+    border: 5px solid teal;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+}

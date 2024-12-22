@@ -1,0 +1,18 @@
+.elementopai{
+    background-color: tomato;
+    color: bisque;
+    font-size:large;
+    margin-top: 2px;
+    width: 200px;
+    border: transparent;
+    padding: 11px;
+    border-radius: 20px;
+}
+
+
+
+.elementofilho{
+   background-color: gold;
+   color:brown;
+   font-family:cursive;
+}

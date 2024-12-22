@@ -1,0 +1,63 @@
+/* Estilos para o formulário de login */
+.login__form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+/* Estilos para o cabeçalho do formulário de login */
+.login__header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+    color: brown; /* Cor do texto no cabeçalho */
+}
+
+/* Estilos para as imagens dentro do formulário */
+img {
+    width: 100px; /* Largura máxima para todas as imagens */
+}
+
+/* Estilos adicionais para o cabeçalho do formulário de login */
+login__header {
+    color: #333; /* Cor do texto no cabeçalho */
+    font-size: 1.5em; /* Tamanho da fonte */
+}
+
+/* Estilos para o campo de entrada de texto do formulário */
+.login__input {
+    border: 2px solid #333; /* Borda sólida com cor escura */
+    border-radius: 8px; /* Borda arredondada */
+    color: #333; /* Cor do texto dentro do campo */
+    font-size: 1em; /* Tamanho da fonte */
+    margin-bottom: 15px; /* Margem inferior */
+    max-width: 300px; /* Largura máxima */
+    width: 100%; /* Largura total do contêiner pai */
+    padding: 10px; /* Preenchimento interno */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+/* Estilos para o botão de envio do formulário */
+.login__buttom {
+    display: flex;
+    justify-content: center;
+    background-color: mediumturquoise; /* Cor de fundo do botão */
+    padding: 15px; /* Preenchimento interno */
+    border-radius: 7px; /* Borda arredondada */
+    color: white; /* Cor do texto no botão */
+    font-size: 1.3em; /* Tamanho da fonte */
+    cursor: pointer; /* Ícone de cursor ao pairar */
+    width: 100px; /* Largura fixa */
+    max-width: 300px; /* Largura máxima */
+}
+
+/* Estilos para o botão quando estiver desativado */
+.login__buttom:disabled {
+    background-color: #eee; /* Cor de fundo quando desativado */
+    counter-reset: #aaa; /* Contagem de reset para algum elemento */
+    cursor: auto; /* Cursor padrão */
+}

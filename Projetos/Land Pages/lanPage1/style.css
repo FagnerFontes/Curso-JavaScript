@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+.trabalho {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    height: 4000px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 20px;
+    color: #fbfbfb;
+    font-family: Inter;
+}
+
+.landing-page {
+    position: absolute;
+    top: 0px;
+    background-color: #222;
+    width: 1440px;
+    height: 4000px;
+    overflow: hidden;
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1440px;
+    height: 4000px;
+    height: 688.4px;
+    overflow: hidden;
+}
+
+.top-nav {
+    /* border: solid 1px coral; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1440px;
+    height: 54px;
+    font-size: 16px;
+}
+
+.data {
+    position: absolute;
+    top: 11px;
+    left: 113px;
+    width: 1213px;
+    height: 63px;
+}
+
+.nav-links {
+    /* border: 1px solid white; */
+    position: absolute;
+    top: 22px;
+    left: 662px;
+    width: 400px;
+    height: 19px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+}
+
+.name {
+    position: absolute;
+    color: #f26b50;
+    top: 174px;
+    left: 160px;
+    width: 500px;
+    height: 131px;
+    font-size: 117px;
+    font-family: santion;
+
+}
+
+.primeiro {
+    position: absolute;
+    top: calc(50% - 65.5px);
+    left: calc(50% - 751px);
+    color: white;
+}
+
+.segundo {
+    position: absolute;
+    top: 0px;
+    left: 700px;
+}
+
+
+.freelancer {
+    position: absolute;
+    top: 385px;
+    left: 160px;
+    width: 340px;
+    height: 73px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-freelancer {
+    text-decoration: underline;
+    color: coral;
+    font-family: 'aparajita';
+
+}
+
+.link-freelancer:hover {
+    font-size: 35px;
+}
+
+.personal-details {
+    position: absolute;
+    top: 645px;
+    left: 0px;
+    width: 1440px;
+    height: 503px;
+    font: 26px;
+}
+
+.bg {
+    width: 100%;
+    position: relative;
+    background-color: rgba(84, 84, 84, 0.46);
+    backdrop-filter: blur(12px);
+    height: 503px;
+}
+
+.ui-designer {
+    position: absolute;
+    top: 345px;
+    left: 960px;
+    text-decoration: underline;
+    font-family: Sansation;
+    color: #f26b50;
+}
+
+.union {
+    width: 100%;
+    position: relative;
+    height: 140.06px;
+    text-align: left;
+    font-size: 20px;
+    color: #fbfbfb;
+    font-family: Inter;
+
+}
+
+.vienna-based-art {
+    position: absolute;
+    top: 370px;
+    left: 960px;
+    display: flex;
+    align-items: center;
+    width: 366px;
+}
+
+.my-projects {
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    background-color: #393939;
+    width: 1440px;
+    margin-top: 2880px;
+    height: 780px;
+    }
+
+    .header-links{
+        text-decoration: none;
+        color: white;
+    }
+
+  .header-links:hover{
+    color: #f26b50;
+  }
+
+  
+@media only screen and (max-width: 768px) {
+    .landing-page {
+        position: absolute;
+        top: 0px;
+        background-color: #222;
+        width: 720px;
+        height: 2000px;
+        overflow: hidden;
+    }
+
+    .trabalho {
+        width: 80%;
+        position: relative;
+        background-color: #fff;
+        height: 2000px;
+        overflow: hidden;
+        text-align: left;
+        font-size: 20px;
+        color: #fbfbfb;
+        font-family: Inter;
+    }
+
+    .header {
+        position: absolute;
+        display: flex;
+        justify-content: start;
+        top: 0px;
+        left: 0px;
+        width: 80%;
+        height: 2000px;
+        height: 688.4px;
+        overflow: hidden;
+    }
+
+    .name {
+        position: absolute;
+        color: #f26b50;
+        top: 174px;
+        left: 160px;
+        width: auto;
+        height: 131px;
+        font-size: 117px;
+        font-family: santion;
+    }
+
+    .top-nav {
+        display: flex;
+        justify-content: start;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 720px;
+        height: 54px;
+        font-size: 16px;
+    }
+
+    .primeiro {
+        position: absolute;
+        top: calc(50% - 35.5px);
+        left: calc(50% - 551px);
+        color: white;
+        margin-left: 10px;
+    }
+    
+    .segundo {
+        position: absolute;
+        top: 0px;
+        left: 300px;
+    }
+
+
+    body{
+        width: 50%;
+    }
+  }

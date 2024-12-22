@@ -1,0 +1,79 @@
+
+* {/*Define estilos para todos os elementos da página*/
+
+    padding: 0px;/*Define o prenchimento interno de todos os elementos */
+    margin: 0px;/*Define as margens de todos os elementos como 0*/
+    border: none;/*Remove  as bordas de todos os elementos*/
+}
+
+
+main {/*Define estilos para a seção principal chamada "main" */
+
+    display: flex;/*Usa o modelo de layout flexivel para a seção principal*/
+    justify-content: center;/*Centraliza horizontalmente os elementos filhos*/
+    align-items: center;/*Centraliza verticalmente os elementos filhos*/
+    width: 100%;/*Define a largura da seção principal como 100% da largura do contêiner pai*/
+}
+
+button {/*Define estilos para os botões*/
+
+    width: 150px;/*Largura fixa para os botões*/
+    height: 40px;/*Altura fixa dos botões*/
+    background-color: violet;/*Cor de fundo dos botões*/
+    color: white;/*Cor de texto dos botões*/
+    cursor: pointer;/*Altera o cursor para um ponteiro ao passar o mouse sobre os botões */
+    border-radius: 10px;/*Adiciona bordas arredondas aos botões*/
+}
+
+.curso {/*Define estilos para elementos com a classe "curso" */
+
+    display: flex;/*Usa o modelo de layout flexível para elementos com a classe "curso"*/
+    justify-content: center;/*Centraliza horizontalmente os elementos filhos dentro das caixas "curso" */
+    width: 200px;/*Largura das caixas "curso" */
+    border: 4px ;/*Definições para a borda das caixas "curso"*/
+    border-radius: 10px;/*Borda arredonda das caixas "curso" */
+    margin: 5px 0px; /*Margens superior e inferior das caixas "curso" */
+    padding: 10px;/*Preenchimento interno das caixas "curso" */
+    cursor: pointer;/*Altera o curso para um ponteiro ao passar o mouse sobre as caixas "curso" */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.selecionado {/*Define estilos para elementos com a classe "selecionado" (com aa regra !importante para prioridade) */
+
+    background-color: #800 !important;/*Cor de fundo para elementos selecionaos */
+    color: rgba(255, 204, 232, 0.363) !important;/*Cor do texto para elementos selecionados */
+    border-color: #f00 !important;/*Cor da borda para elementos selecionados */
+}
+
+.c1 {/*Define estilos para elementos com a classe "c1" */
+    
+    background-color: tomato;/*Cor de fundo para elementos com a classe "c1" */
+    color: gold;/*Cor do texto para elementos com a classe "c2" */
+}
+
+.c2 {/*Define estilos para elementos com a classe "c2" */
+    background-color: #5e2f2f;/*Cor de fundo para elementos com a classe "c2" */
+    color: #ccc;/*Cor de texto para elementos com a classe "c2" */
+}
+
+.caixa {/*Define estilos para elementos a classe "caixa" */
+
+    border: 4px solid violet;/*Borda das caixas*/
+    background-color: #eee;/*Cor de fundo das caixas*/
+    padding: 10px;/*Prenchimento interno das caixas*/
+    display: flex;/*Usa o modelo de layout flexível para elementos com a classe "caixa" */
+    flex-direction: column;/*Define a direção do layout como coluna*/
+    justify-content: center;/*Centraliza verticalmente os elementos filhos dentro das caixas "caixa"*/
+    align-items: center;/*Centraliza horizontalmente os elementos filhos dentro das caixas "caixa"*/
+    margin: 5px;/*Margens para as caixas "caixa" */
+    height: 500px;/* Altura fixa para as caaixas "caixa"*/
+    width: 300px;/*Largura fixa para as caixas "caixa" */
+}
+
+.lixeira{
+    width: 24px;
+    cursor: pointer;/*Altera o curso para um ponteiro ao passar o mouse sobre as caixas "curso" */
+
+} 
