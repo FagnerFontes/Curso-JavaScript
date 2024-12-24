@@ -8,5 +8,7 @@
         "operador",
         "valores",
         "vermelho"
-    ]
+    ],
+    "workbench.colorTheme": "Noctis",
+    "workbench.iconTheme": "vscode-icons"
 }
