@@ -1,0 +1,13 @@
+.numero{
+  font-size: larger;
+}
+
+.ok{
+    color: tomato;
+    font-weight: 700;
+}
+
+.erro{
+    color: red;
+    font-size: 25px;
+}
