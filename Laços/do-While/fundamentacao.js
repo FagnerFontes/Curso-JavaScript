@@ -14,14 +14,14 @@ do{
 
 //Aqui está um exemplo de uso do "do-while" para ler um número digitado pelo usuário e exibir uma mensagem até que o número digita seja igual a zero: 
 
-let numero; 
+let numero; //
 
-do{
-    numero = parseFloat(prompt("Digite um número"))
-    console.log(`Você digitou o número ${numero}`);
-}while(
+do{//O bloco de código dentro do "do" será executado pelo menos uma vez, pois a condição "numero !==0" só será avaliada após a primeira execução do
+    numero = parseFloat(prompt("Digite um número"))//Solicita ao usuário que digite um número e converte a entrada para um número de ponto flutuante.
+    console.log(`Você digitou o número ${numero}`);//Exibe uma mensagem com o número digitado pelo usuário.
+}while(//A condição do laço "do-while" verifica se o número digitado pelo usuário é diferente de zero. Se for verdadeiro, o bloco de código será executado novamente, caso contrário, o laço será interrompido e a execução continuará após o laço "do-while".
 
-    (numero !==0)
+    (numero !==0)//A condição do laço "do-while" verifica se o número digitado pelo usuário é diferente de zero. Se for verdadeiro, o bloco de código será executado novamente, caso contrário, o laço será interrompido e a execução continuará após o laço "do-while".
 )
 
 //Neste exemplo, o bloco de código dentro do "do" será executado pelo menos uma vez, pois a condição "numero !==0" só será avaliada após a primeira execção do bloco. Se o número digitado pelo usuário for zero, o laço será interrompido e a execução continuará após o laço "do-while". Caso contrário, o bloco será executado novamente para solicitar um novo número ao usuário. 

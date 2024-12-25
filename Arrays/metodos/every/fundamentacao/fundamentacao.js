@@ -17,9 +17,10 @@
 
 //* Comportamento: O "every()" percorre o array da esquerda para a direita, ou seja, do primeiro elemento ao último. Assim que encontra um elemento para o qual a função retorna "false", ele para de pecorrer o array e retorna "false". Isso signica que se pelo menos um elemento não atender ao critério, a função "every()" retornará "false". 
 
-const numeros = [10,20,30,40,50,15 ]
+const numeros = [10,20,30,40,50,15 ]//Cria um array de números
 
-const todosMaioresQue5 = numeros.every(numero => numero > 5)
-console.log(todosMaioresQue5);
+const todosMaioresQue5 = numeros.every(numero => numero > 5)//Verifica se todos os elementos do array são maiores que 5. Aqui o método avery() é usado para verificar se todos os elementos do array são maiores que 5. Se pelo menos um elemento não atender a essa condição, o método "every()" retornará "false". Caso contrário, ele retornará "true".
+
+console.log(todosMaioresQue5);//Imprime o resultado da verificação.
 
 //O método "every()" é útil quando se deseja verificar se todos os elementos de um array atendem a uma condição específica. Ele é usado para realizar validações em todos os elementos do array e retorna um valor booleano com base nessa validação. Se pelo menos um elemento não atender à condição, o método "every()" retorna "false". Caso contrário, ele retorna "true". 

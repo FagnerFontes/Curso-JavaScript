@@ -1,13 +1,14 @@
-.numero{
-  font-size: larger;
+.numero{/*eleciona a classe numero*/
+    color: blue; /* muda a cor do texto */  
+  font-size: larger; /* aumenta o tamanho da fonte */
 }
 
-.ok{
-    color: tomato;
-    font-weight: 700;
+.ok{/*eleciona a classe ok*/
+    color: tomato;/* muda a cor do texto */
+    font-weight: 700;/* deixa o texto em negrito */
 }
 
-.erro{
-    color: red;
-    font-size: 25px;
+.erro{/*eleciona a classe erro*/
+    color: red;/* muda a cor do texto */
+    font-size: 25px;/* aumenta o tamanho da fonte */
 }

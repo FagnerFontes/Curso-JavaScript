@@ -5,6 +5,13 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "teste",
+      "request": "launch",
+      "mainClass": "teste",
+      "projectName": "Curso-JavaScript_ab0ade55"
+    },
+    {
       "type": "node",
       "request": "launch",
       "name": "Run atob",
@@ -12,7 +19,6 @@
       "cwd": "${workspaceFolder}",
       "args": []
     },
-
     {
       "type": "chrome",
       "request": "launch",

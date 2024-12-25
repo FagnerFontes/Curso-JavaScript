@@ -1,7 +1,15 @@
-const cursos = ["PHP", "JavaScript", "CSS", "HTML", "React", "C", "Java"]
+// Objetivo: Criar um array com os nomes dos cursos
+// 1. Criar um array com os nomes dos cursos
+// 2. Percorrer o array cursos
+// 3. Imprimir o índice e o nome do curso
+// 4. Imprimir o array com os nomes dos cursos
 
-const nomesCursos = cursos.map((curso, i)=>{
-    console.log(i, curso);
+//Neste código o metodo
+
+const cursos = ["PHP", "JavaScript", "CSS", "HTML", "React", "C", "Java"]//Cria um array com os nomes dos cursos
+
+const nomesCursos = cursos.map((curso, i)=>{//Cria um array com os nomes dos cursos. Aqui é utilizado o método map para percorrer o array cursos
+    console.log(i, curso);//Imprime o índice e o nome do curso
 })
 
-console.log(`${nomesCursos}`);
+console.log(`${nomesCursos}`);//Imprime o array com os nomes dos cursos

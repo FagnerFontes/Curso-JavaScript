@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conferência de Números da Lotofácil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 600px;
+            width: 90%;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #4CAF50;
+        }
+        h2 {
+            font-size: 20px;
+            margin: 20px 0 10px;
+            color: #333;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #e8f5e9;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        li span {
+            color: green;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conferência de Números da Lotofácil</h1>
+
+        <script>
+            // Programa para conferir se os números sorteados na lotofácil estão entre 1 e 25. 
+            // 1. Definir os números sorteados na lotofácil.
+            let numerosSorteados = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+
+            // 2. Solicitar ao usuário que digite os números escolhidos.
+            let numerosEscolhidos = []; // Array para armazenar os números escolhidos pelo usuário.
+            let contador = 0; // Variável para contar o número de números escolhidos pelo usuário.
+
+            // 3. Solicitar ao usuário que digite 15 números entre 1 e 25.
+            do {
+                let numero = parseInt(prompt("Digite um número entre 1 e 25"));
+
+                // 3.1 Verificar se o número digitado pelo usuário está entre 1 e 25.
+                if (numero >= 1 && numero <= 25) {
+                    numerosEscolhidos.push(numero); // Adiciona o número escolhido pelo usuário ao array "numerosEscolhidos".
+                    contador++; // Incrementa o contador de números escolhidos.
+                } else {
+                    alert("Número inválido. Digite um número entre 1 e 25."); // Exibe uma mensagem de erro se o número digitado pelo usuário estiver fora do intervalo permitido.
+                }
+            } while (contador < 15); // O laço "do-while" é executado até que o usuário tenha digitado 15 números válidos.
+
+            // 4. Comparar os números escolhidos pelo usuário com os números sorteados.
+            for (let i = 0; i < numerosSorteados.length; i++) {
+                let numeroSorteado = numerosSorteados[i]; // Obtém o número sorteado na posição "i".
+                let index = numerosEscolhidos.indexOf(numeroSorteado); // Verifica se o número sorteado está presente no array de números escolhidos pelo usuário.
+
+                // 4.1 Verificar se o número sorteado está presente no array de números escolhidos.
+                if (index !== -1) {
+                    numerosEscolhidos[index] = `<span>${numeroSorteado}</span>`; // Se o número sorteado estiver presente, substitui o número escolhido pelo usuário pelo número sorteado com a cor verde.
+                }
+            }
+
+            // 5. Exibir os números escolhidos pelo usuário e os números sorteados.
+            document.write("<div>");
+            document.write("<h2>Números escolhidos pelo usuário:</h2>");
+            document.write("<ul>");
+            for (let numero of numerosEscolhidos) {
+                document.write(`<li>${numero}</li>`);
+            }
+            document.write("</ul>");
+
+            document.write("<h2>Números sorteados:</h2>");
+            document.write("<ul>");
+            for (let numero of numerosSorteados) {
+                document.write(`<li>${numero}</li>`);
+            }
+            document.write("</ul>");
+            document.write("</div>");
+
+            // 6. Armazenar os números escolhidos pelo usuário e os números sorteados para conferência posterior.
+            localStorage.setItem("numerosEscolhidos", JSON.stringify(numerosEscolhidos)); // Armazena os números escolhidos pelo usuário no armazenamento local.
+            localStorage.setItem("numerosSorteados", JSON.stringify(numerosSorteados)); // Armazena os números sorteados no armazenamento local.
+        </script>
+
+        <div class="footer">&copy; 2024 - Conferência de Números</div>
+    </div>
+</body>
+</html>
