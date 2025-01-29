@@ -6,7 +6,7 @@
 
 //Aqui está  um exemplo simples de uma função geradora que gera uma sequência infinita de números pares: 
 
-function * numerosPares(){
+function * numerosPares(){//Asterisco indica que é uma função geradora 
     let numero = 0; 
 
     while(true){

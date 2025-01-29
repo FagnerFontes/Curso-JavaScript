@@ -1,0 +1,100 @@
+<!DOCTYPE html><!--  -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>CallBacks</title>
+</head>
+
+
+    <style>
+        li{
+            font-family: 'aparajita';
+            font-size: 18px;
+        }
+
+        strong{
+            color: rgba(199, 80, 25, 0.904);
+        }
+    </style>
+<body>
+
+    <h1 class="container-fluid p-2 bg-body-secondary fixed-top text-center text-body">CallBacks
+    </h1>
+    <div class="p-4 invisible"></div>
+    <br>
+
+    <div class="container"> 
+        <p>
+            <strong>CallBacks</strong> são funções que são passadas como argumentos para outras funções. Quando a função que recebe a função de callBack é executada, a função de callBack é executada também.
+
+            Então, nós podemos também passar funções como parâmetros para outras funções. Isso é muito útil quando queremos que uma função seja executada após a execução de outra função.
+            
+            <br>
+            <br>
+            <img src="./img/esq_callback.png" alt=""><!--Importa a imagem do callback-->
+
+            <br>
+            <br>
+            A função print() recebe outra função como parâmetro e a chama dentro de si. Isso é válido no JavaScript e nós chamamos isso de <strong>CallBacks</strong>. Então, a função que é passada como parâmetro é chamada de <strong>CallBack</strong>. Mas isso não é tudo, nós podemos passar argumentos para a função de callBack também.  
+        </p>
+
+        <h3>Porque precisamos de funções de callback?</h3>
+
+        <p>
+            O JavaScript executa o código sequencialmente em ordem de cima para baixo. Mas, às vezes, nós precisamos executar um código após a execução de outro código. Nós podemos fazer isso com funções de callBack.
+
+            Callbacks garantem que uma função não seja executada antes de outra função ser executada. Elas nos ajudam a desenvolver código JavaScript assíncrono e evitam que tenhamos problemas com a ordem de execução do código.
+        </p>
+
+        <h3>
+            Como Criar Funções de Callback?
+        </h3>
+
+        <p>
+            Para entender o que expliquei acima, deixe-me começar com um exemplo simples. Nós queremos registrar uma mensagem no console mas ela deve aparecer lá após 4 segundos. Nós podemos fazer isso com a função setTimeout() do JavaScript.
+        </p>
+
+        <img src="./img/exer1.png" alt="">
+        <br>
+        <br>
+        <p>
+            Existe um método em JavaScript chamado setTimeout que é usado para executar uma função após um determinado período de tempo em (em milessimos de segundo). Então o código acima irá mostrar a mensagem após 4 segundos.
+        </p>
+       
+        <h3>O que é uma função anônima? </h3>
+
+        <p>
+            Uma função anônima é uma função que não tem um nome. Ela é declarada sem um nome e é usada como um valor. Funções anônimas são passadas como argumentos para outras funções. Elas são muito úteis quando queremos passar uma função como argumento para outra função.
+
+            Como alternativa, podemos definir uma função diretamente como um argumento para outra função, ao invés de chamá-la primeiro e depois passá-la como argumento. Isso é chamado de função anônima.
+        </p>
+
+        <img src="./img/exer2.png" alt="">
+
+        <p>
+            No exemplo acima, nós passamos uma função anônima como argumento para a função setTimeout(). A função anônima é executada após 4 segundos.
+            
+            Como podemos ver, a função de callback aqui não tem nome e uma função sem nome em JavaScript é chamada de função anônima. Isso faz exatamente a mesma tarefa que a função de callback anterior.
+        </p>
+
+        <h3>Callbacks como arrow functions</h3>
+
+        <p>
+            Nós podemos usar arrow functions como funções de callback também. Arrow functions são uma forma mais curta de escrever funções em JavaScript. Elas são muito úteis quando queremos escrever funções de callback curtas e simples.
+        </p>
+
+        <img src="./img/exer3.png" alt="">
+        </div>
+    
+       
+    
+
+    <script src="./exer1.js"></script>
+    <script src="./exer2.js"></script>
+</body>
+
+</html>

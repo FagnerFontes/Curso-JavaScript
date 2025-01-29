@@ -14,15 +14,16 @@ console.log("Bom dia Fagner Fontes Batista");
 //Devido à ausência do próprio "this", as arrow functions não são adequadas para serem usadas como métodos de objetos, pois, "this" não se comportaria da maneira esperada em relação ao objeto 
 
 //------------------- função normal--------------------------
+//Abaixo temos uma função normal que multiplica dois números
 const soma = function (num1, num2){
-    return num1 * num2
+    return num1 * num2//Aqui
 }
-console.log(soma(5,3));
+console.log(soma(5,3));//Aqui imprime
 
 //------------------- função Arrow function--------------------------
 
-const operar  =(num1 , num2)=>{
-    return num1 * num2
+const operar  =(num1 , num2)=>{//Aqui temos a arrow function 
+    return num1 * num2  //Aqui  é o retorno da função 
 }
 
-console.log(operar(8,6))
+console.log(operar(8,6))//Aqui imprime 

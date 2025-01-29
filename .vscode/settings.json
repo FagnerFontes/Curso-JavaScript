@@ -10,5 +10,6 @@
         "vermelho"
     ],
     "workbench.colorTheme": "Noctis",
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "icons",
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }
