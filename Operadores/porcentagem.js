@@ -2,8 +2,8 @@
 
 function porcentagem (valor) {
 
-    calculo = valor * .20
+    calculo = valor * .2
     console.log(`${calculo}`);
 }
 
-porcentagem(1280)
+porcentagem(180)
