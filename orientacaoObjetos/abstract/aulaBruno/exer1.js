@@ -54,7 +54,7 @@ class Turbo{
     constructor(e){
         //Determina a potência do turbo com base no valor do parâmetro "e"
         if (e==0) {
-            this.pot=0
+            this.pot=0//
         }else if(e==1){
             this.pot=50
         }else if(e==2){
