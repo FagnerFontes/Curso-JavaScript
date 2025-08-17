@@ -4,16 +4,16 @@
 
 //Aqui está um exemplo simples de como as funções aninhadas funcionam: 
 
-const saudacao = (nome) =>{
+const saudacao = (nome) =>{//função saudação com o parametro nome
 
-    const mensagem =() =>{
-        return `Olá, ${nome}! Bem-vindo!`
-    }
-    return mensagem()
-}
+    const mensagem =() =>{//função mensagem aninhada dentro da função saudação 
+        return `Olá, ${nome}! Bem-vindo!`// retorna uma mensagem personalizada com o nome passado como argumento 
+    }//fim da declaração da função mensagem
+    return mensagem()//retorna o resultado da chamada da função mensagem 
+}//fim da declaração da função saudação 
 
-const resultado = saudacao("Fagner Fontes")
-console.log(resultado);
+const resultado = saudacao("Fagner Fontes")//chama a função saudação com o argumento "Fagner Fontes" e armazena o resultado em uma variável resultado
+console.log(resultado);//exibe o resultado da chamada da função saudação no console //Olá, Fagner Fontes! Bem-vindo! //exibe a mensagem personalizada com o nome "Fagner Fontes"
 
 //No exemplo acima, a função "mensagem" está aninhada dentro da função "saudação". Ela tem acesso ao parâmetro "nome" da função externa e pode retornar uma mensagem personalizada. A função externa "saudação" interna mensagem e retorna seu resultado. 
 

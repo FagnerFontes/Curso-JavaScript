@@ -1,0 +1,21 @@
+#div_relogio{
+    font-size: 20px; /* Tamanho da fonte */
+    font-family: 'Arial'; /* Tipo da fonte */
+    color: #000;/* cor da fonte */
+    text-align: center;/* Alinhamento do texto */
+    margin-top: 20px;/* Margem superior */
+    margin-bottom: 20px;/* Margem inferior */   
+    border: 1px solid #000;/* Borda */
+    padding: 10px;/* Espaçamento interno */
+    width: 200px;  /* Largura    */
+    margin-left: auto;/*  */
+    margin-right: auto;/*  */
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    box-shadow: 0 0 10px tomato;
+    text-shadow: 0 0 5px #000;
+    animation: anima 1s infinite;
+}
+
+
+

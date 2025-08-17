@@ -25,4 +25,5 @@ const login = (user) => {//Função que simula uma API de login
 login({ usuario: 'admin', senha: 'admin' })//Chama a função login passando um objeto com usuário e senha
     .then(result => console.log(result))//O método then é chamado para tratar o sucesso da promessa
     .catch(error => console.log(error))//O método catch é chamado para tratar o erro da promessa
-    .finally(() => console.log('Promessa finalizada'))//O método finally é chamado para finalizar a promessa
+    .finally(() => console.log('Promessa finalizada'))//O método finally é chamado para executar uma ação independente do resultado da promessa 
+    

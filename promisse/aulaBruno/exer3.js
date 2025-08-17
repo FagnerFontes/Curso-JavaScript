@@ -17,53 +17,52 @@
 
 
 const numero = document.getElementById("numero");
+const btn_promise = document.getElementById("btn_promessa");
 
-let promise = new Promise((resolve, reject) => {
-  //cria uma nova promessa
-  let resultado = false; //cria uma variável resultado que recebe false
-  let tempo = 3000; //cria uma variável tempo que recebe 3000
+promessa.addEventListener("click", () => {
+  //adiciona um evento de click ao botão
+  numero.innerHTML = "Processando..."; //escreve na tela aguardando
+  promessa(); //chama a função promessa
+})
 
-  setTimeout(() => {
-    //função que será executada após o tempo determinado
-    //resultado = true; //resultado recebe true
-    if (resultado) {
-       numero.innerHTML = 'Deu tudo certo';//escreve na tela
-        numero.classList.remove("erro");//remove a classe erro
-        numero.classList.add("ok");//adiciona a classe ok
-    } else {
-        numero.innerHTML = "Deu tudo errado";//escreve na tela
-        numero.classList.add("erro");//adiciona a classe erro
-        numero.classList.remove("ok");//
-    }
-  }, tempo); //tempo que a função será executado
-}); //cria uma nova promessa
 
-numero.innerHTML = "Aguardando..."; //escreve na tela aguardando
+//Cria uma nova promessa que retorna uma mensagem de sucesso ou erro após um tempo determinado de 6 segundos.
+const promessa=()=> {
+  let promise = new Promise((resolve, reject) => {
+    //cria uma nova promessa
+    let resultado = true; //cria uma variável resultado que recebe false
+    let tempo = 3000; //cria uma variável tempo que recebe 3000
+  
+    setTimeout(() => {
+      //função que será executada após o tempo determinado
+      //resultado = true; //resultado recebe true
+      if (resultado) {
+         numero.innerHTML = 'Deu tudo certo';//escreve na tela
+          
+      } else {
+          numero.innerHTML = "Deu tudo errado";//escreve na tela
+         
+      }
+    }, tempo); //tempo que a função será executado
+  }); //cria uma nova promessa
+  
+  
+  
+  promise.then((retorno) => {
+    numero.innerHTML = retorno; //escreve na tela
+    numero.classList.remove("erro");//remove a classe erro
+    numero.classList.add("ok");//adiciona a classe ok
+  }); //chama a promessa
+  
+  promise.catch((retorno) => {
+    //chama a promessa
+    numero.innerHTML = retorno; //escreve na tela
+    numero.classList.add("erro");//adiciona a classe erro
+    numero.classList.remove("ok");
+  }); //chama a promessa
+}
 
-promise.then((retorno) => {
-  //chama a promessa
-  numero.innerHTML = retorno; //escreve na tela
-}); //chama a promessa
 
-promise.catch((retorno) => {
-  //chama a promessa
-  numero.innerHTML = retorno; //escreve na tela
-}); //chama a promessa
 
-/* let resultado=false; 
-let tempo = 3000;
+numero.innerHTML = "Esperando..."; //escreve na tela aguardando
 
-numero.innerHTML="Aguardando...";
-
-setTimeout(() => {//função que será executada após o tempo determinado
-    resultado = true;//
-    if(resultado){//se o resultado for verdadeiro
-        numero.innerHTML = 'Deu tudo certo';//escreve na tela
-        numero.classList.remove("erro");//remove a classe erro
-        numero.classList.add("ok");//adiciona a classe ok
-    }else{//se o resultado for falso
-        numero.innerHTML = "Deu tudo errado";//escreve na tela
-        numero.classList.add("erro");//adiciona a classe erro
-        numero.classList.remove("ok");//
-    }//
-},tempo);//tempo que a função será executada */
