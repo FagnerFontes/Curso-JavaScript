@@ -1,5 +1,5 @@
 let produtos =  [
-    {nome: "Pendrive", preco: 62.89},
+    {nome: "Pendrive", preco: 62.89},//
     {nome: "Fone Lenovo", preco: 120.78},
     {nome: "Cabo USB", Preco: 41.43},
     {nome: "Mouse Dazz", Preco: 150.00 },
@@ -12,5 +12,5 @@ let produtos =  [
 
 
 
-const precos = produtos.map(produto => produto.Preco)
-console.log(precos);
+const precos = produtos.map(produto => produto.Preco)//
+console.log(precos);//Exibe o array com os preços dos produtos.

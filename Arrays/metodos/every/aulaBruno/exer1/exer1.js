@@ -1,3 +1,6 @@
+//A função do metodo every() é testar se todos os elementos de um array passam por um teste implementado por uma função fornecida.
+
+
 //Selecio o elemento HTML com o ID "array" e armazena-o em p_array
 const p_array = document.querySelector("#array")
 

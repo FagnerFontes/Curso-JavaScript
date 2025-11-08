@@ -7,10 +7,29 @@ const tmp = document.getElementById("tmp_alarme");// Pega a div do HTML onde o t
 const btn_alarme = document.getElementById("hora_alarme");// Pega o botão do HTML para ativar o alarme
 
 
+const som_alarme = new Audio("./audios/funny-alarm-317531.mp3");// Cria um objeto de áudio para o alarme
+som_alarme.loop = -1;// Define o áudio para repetir em loop
+
+
+
+
+
+
+
+
+
+
+
+
+
 btn_ativar.addEventListener("click", function() {// Adiciona um evento de clique ao botão ativar
     timer = setInterval(function() {// Inicia um timer que chama a função a cada 1000 milissegundos (1 segundo)
     
 })
+
+
+
+
 
 
 
